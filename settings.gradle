@@ -1,2 +1,4 @@
 rootProject.name = 'GradleSecondTask'
+include 'Core'
+include 'Api'
 
