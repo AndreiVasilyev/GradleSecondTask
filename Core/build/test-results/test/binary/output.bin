@@ -1,3 +1,6 @@
 !String: 12 is a positive number
 !String: 79 is a positive number
 "All strings are positive numbers
+!String: 12 is a positive number
+&String: -79 is not a positive number
+&All strings are not positive numbers

@@ -1,5 +1,7 @@
 plugins {
     id 'java'
+    id 'jacoco'
+    id 'test-report'
 }
 
 group = 'by.gradle.second'
@@ -17,4 +19,12 @@ dependencies {
 
 test {
     useJUnitPlatform()
+    finalizedBy jacocoTestReport
 }
+
+jacocoTestReport {
+    dependsOn test
+    finalizedBy testReport
+}
+
+testReport.dependsOn jacocoTestReport
