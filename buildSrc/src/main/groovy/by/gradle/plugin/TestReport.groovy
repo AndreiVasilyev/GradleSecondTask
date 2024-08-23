@@ -9,8 +9,7 @@ class TestReport implements Plugin<Project>{
     void apply(Project project) {
         def map=[description:"creation test report",group:"customPlugin",type: Copy]
         project.task(map,"testReport"){
-            doNotTrackState "Some reason"
-            println "Iam in test report plugin"
+            doNotTrackState "Can't copy to root dir without this method"
             from("build/reports/jacoco/test/html/index.html")
             into("$project.parent.rootDir/")
             rename("index.html","readme.md")
