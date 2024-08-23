@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="by.gradle.second.UtilsTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2024-08-23T11:36:10" hostname="NOTEBOOK-ANDREI" time="0.044">
+  <properties/>
+  <testcase name="returnTrueIfAllStringsArePositiveNumbers()" classname="by.gradle.second.UtilsTest" time="0.044"/>
+  <system-out><![CDATA[String: 12 is a positive number
+String: 79 is a positive number
+All strings are positive numbers
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

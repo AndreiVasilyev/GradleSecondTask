@@ -2,7 +2,6 @@ plugins {
     id 'java'
 }
 
-group = 'by.gradle.second'
 version = '1.0'
 
 repositories {
@@ -10,6 +9,7 @@ repositories {
 }
 
 dependencies {
+    implementation project(":Core")
     testImplementation platform('org.junit:junit-bom:5.10.0')
     testImplementation 'org.junit.jupiter:junit-jupiter'
 }
